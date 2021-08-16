@@ -39,20 +39,11 @@ steps:
 - task: CopyFiles@2
   inputs:
     Contents: '**'
-    TargetFolder: '$(build.artifactstagingdirectory)'
-# - script: |
-#     python -m pip install --upgrade pip setuptools wheel
-#     pip install -r requirements.txt
-#     pip install unittest-xml-reporting
-#   displayName: 'Install prerequisites'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
-# - script: |
-#     pushd '$(projectRoot)'
-#     python manage.py test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
-#   displayName: 'Run tests'
-
-# - task: PublishTestResults@2
-#   inputs:
-#     testResultsFiles: "**/TEST-*.xml"
-#     testRunTitle: 'Python $(PYTHON_VERSION)'
-#   condition: succeededOrFailed()
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish build'
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'IssuesLogDjango'
+    publishLocation: 'Container'
