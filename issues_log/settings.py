@@ -79,8 +79,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'IssuesLog-Django',
         'USER': 'postgres',
-        'PASSWORD': 'oRJnunbp4QhiLMD5seuQ',
-        'HOST': 'universal-db.cvapcbm9r3cv.us-east-2.rds.amazonaws.com',
+        'PASSWORD': 'Sam.Boss@92',
+        'HOST': '18.224.29.228',
         'PORT': '5432'
     }
 }
