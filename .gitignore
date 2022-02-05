@@ -12,3 +12,4 @@ pyvenv.cfg
 test.py
 uwsgi_params
 /share
+.issueslog.log
