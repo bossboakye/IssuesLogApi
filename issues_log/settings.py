@@ -81,7 +81,7 @@ DATABASES = {
         'USER': '{DBUser}',
         'PASSWORD': '{DBPassword}',
         'HOST': '{DBHostAddress}',
-        'PORT': 'DBPort'
+        'PORT': '{DBPort}'
     }
 }
 
