@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'issues_log.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'IssuesLog-Django',
-        'USER': 'postgres',
-        'PASSWORD': 'Sam.Boss@92',
-        'HOST': '18.224.29.228',
-        'PORT': '5432'
+        'NAME': '{DBName}',
+        'USER': '{DBUser}',
+        'PASSWORD': '{DBPassword}',
+        'HOST': '{DBHostAddress}',
+        'PORT': 'DBPort'
     }
 }
 

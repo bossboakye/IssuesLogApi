@@ -2,3 +2,13 @@ il_env/
 __pycache__/
 *.sqlite3
 .idea/
+/bin
+/lib64
+/lib
+azure-pipelines.yml
+issueslog_django_nginx.conf
+issues_log_uwsgi.ini
+pyvenv.cfg
+test.py
+uwsgi_params
+/share
